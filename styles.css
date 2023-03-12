@@ -9,7 +9,7 @@ body {
     height: 100dvh;
     width: 100%;
 }
-
+/* 
 .wrapper {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -22,8 +22,15 @@ body {
     display: flex;
     background: #eee;
     padding-bottom: 100%;
-  }
+  } */
 
-  .wrapper > div:hover {
-    background-color: #000;
+  .wrapper {
+    border: 1px solid black;
+    display: grid;
+    width:50%;
+    height:50%;
+  }
+  
+  .square {
+    border: 1px solid black;
   }
