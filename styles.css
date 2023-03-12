@@ -9,20 +9,7 @@ body {
     height: 100dvh;
     width: 100%;
 }
-/* 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    gap: 0.3em;
-    width: 50%;
-  }
-  
-  .wrapper > div {
-    display: flex;
-    background: #eee;
-    padding-bottom: 100%;
-  } */
+
 
   .wrapper {
     border: 1px solid black;

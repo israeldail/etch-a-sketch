@@ -5,10 +5,22 @@ clear.style.background = "white"
 clear.style.marginBottom = "15px"
 clear.style.cursor = "pointer"
 
+clear.addEventListener('click', () => {
+  reset()
+})
+
+function reset() {
+  let number = prompt("Enter a number to resize. 1-100");
+  let parsed = parseInt(number);
+  wrapper.style.gridTemplateColumns = `repeat(${parsed}, 1fr)`;
+  wrapper.style.gridTemplateRows = `repeat(${parsed}, 1fr)`;
+  makeGrid(parsed);
+}
+
 function makeGrid(screenSize) {
   for (let i = 0; i < screenSize * screenSize; i++) {
     let square = document.createElement('div');
-    square.classList.add("square");
+    square.style.background = "white"
     wrapper.appendChild(square);
 
     //change background color of a square on hover
@@ -30,7 +42,7 @@ function makeGrid(screenSize) {
 
 }
 
-makeGrid(36);
+makeGrid(16);
 
 
 
